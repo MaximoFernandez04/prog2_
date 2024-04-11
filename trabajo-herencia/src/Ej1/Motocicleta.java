@@ -1,12 +1,16 @@
-public class Coche extends Vehiculo{
+package Ej1;
+
+import Ej1.Bicicleta;
+
+public class Motocicleta extends Bicicleta {
     private int velocidad;
     private int cilindrada;
 
-    public Coche(){
+    public Motocicleta(){
     }
 
-    public Coche(int velocidad, int cilindrada, String color, int wheels) {
-        super(color,wheels);
+    public Motocicleta(String color, int wheels, String tipo, int velocidad, int cilindrada) {
+        super(color, wheels, tipo);
         this.velocidad = velocidad;
         this.cilindrada = cilindrada;
     }
@@ -29,11 +33,11 @@ public class Coche extends Vehiculo{
 
     @Override
     public String toString() {
-        return "Coche : " +
-                "Velocidad=" + velocidad  +
-                ", cilindrada =" + cilindrada +
-                ", color='" + getColor() + '\'' +
-                ", wheels=" + getWheels();
+        return "Moto: "+
+                "velocidad= "+velocidad +
+                ", cilindrada = "+cilindrada+
+                ", type = "+getTipo()+
+                ", color =  "+getColor()+
+                ", wheels = "+ getWheels();
     }
 }
-

@@ -1,4 +1,6 @@
-public class Camioneta extends Coche{
+package Ej1;
+
+public class Camioneta extends Coche {
     private double carga;
 
     public Camioneta(){
@@ -19,7 +21,7 @@ public class Camioneta extends Coche{
 
     @Override
     public String toString() {
-        return "Camioneta: " +
+        return "Ej1.Camioneta: " +
                 "Carga=" + carga +
                 ", velocidad=" + getVelocidad() +
                 ", cilindrada=" + getCilindrada() +

@@ -1,3 +1,5 @@
+package Ej1;
+
 public class Bicicleta extends Vehiculo {
     private String tipo;
 
@@ -18,7 +20,7 @@ public class Bicicleta extends Vehiculo {
     }
     @Override
     public String toString() {
-        return "Bicicleta: "+
+        return "Ej1.Bicicleta: "+
                 " type = "+tipo+
                 ", color =  "+getColor()+
                 ", wheels = "+ getWheels();

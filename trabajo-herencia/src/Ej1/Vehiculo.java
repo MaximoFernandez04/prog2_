@@ -1,4 +1,6 @@
-import java.util.ArrayList;
+package Ej1;
+
+import Ej1.Coche;
 
 public abstract class Vehiculo {
     private String color;
